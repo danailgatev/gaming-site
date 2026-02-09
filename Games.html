@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GAMES</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js"></script>
+	<script src="frog-leap.js"></script>
+</head>
+
+<header>
+	<div class="logo-container">
+		<!--<img src="logo_light-bulb.png" class="light-bulb">-->
+		<h1 class="text-logo">
+			<span>{C0de, </span>
+			<span>Gam€, </span>
+			<span>Sh@re}</span>
+			<span class="orange">.REPEAT</span>
+		</h1>
+	</div>
+</header>
+<body class="home-page">
+	<div class="dropdown">
+		<button class="hamburger" id="menuBtn" onclick="toggleDropdown()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="index.html">HOME</a>
+		<a href="#">GAMES</a>
+		<a href="#">PROJECTS</a>
+		<a href="About_me.html">ABOUT ME</a>
+	</div>
+
+	<section id="frog-leap-section">
+		<h2>Frog Leap Puzzle</h2>
+		<div class="frog-controls">
+			<label>Frogs per side: </label>
+			<input type="number" id="frogCount" min="1" max="5" value="3">
+			<button1 id="startGameBtn">START</button1>
+			<button1 id="resetBtn">RESET</button1>
+			<button_show_solution id="solutionBtn">SHOW SOLUTION</button_show_solution>
+		</div>
+		<div id="frog-leap-board"></div>
+	</section>
+	
+</body>
+</html>
